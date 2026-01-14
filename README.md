@@ -1,10 +1,10 @@
-I have a serious history. Do not track me if you do not want to be tracked.
+Currently under construction - removed all old repositiories to make way for auto-audited coding. 
 
-I am releasing my latest tools I know can help others governing security. 
+
+
 
 Intgrity. Service. Excellence.
 
-Stay tuned! Stay safe!
 
 Questions/Concerns/Ideas: 
   Tank23x0@proton.me
