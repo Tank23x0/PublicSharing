@@ -108,37 +108,6 @@ Every script in this library includes:
 - Appropriate admin/elevated permissions
 - Required modules (installed automatically or prompted)
 
-## 🧾 Experience Snapshot
-
-- **David Yurman Enterprises — Senior Cybersecurity Analyst (2022–Present)**
-  - Lead Sentinel triage on **15+ alerts/day** with **~15-minute MTTR**
-  - Managed **CrowdStrike Falcon** across **1,500+ endpoints** (on-prem & AWS)
-  - Automated **AD/Entra ID vendor cleanup** via PowerShell (30% cycle-time reduction)
-
-- **TKC Holdings — Tier 3 Systems Analyst (2018–2022)**
-  - Escalation lead for **200–300 ServiceNow tickets/month**, 100% resolution
-  - Built a **110+ page Confluence knowledge base** for durable operations
-  - Led **11,000-user M365 migration** with PowerShell automation
-
-- **Barnes-Jewish Hospital — Integrations Systems Analyst (2017–2018)**
-  - High-risk clinical upgrades across **550+ units** with zero disruption
-
-- **Capsugel (Pfizer) — Global IT Manager (2013–2014)**
-  - Global Exchange/AD design for **1,300 users / 18 countries**
-  - EU migration project across **1,900+ systems** with secure identity transition
-
-- **U.S. Air Force — Base Systems Administrator (2006–2011)**
-  - Administered mission-critical infrastructure for **900+ classified users**
-  - Led NOC operations and automated routing for **12,000+ users**
-
-## 🎓 Education & Certifications
-
-- **B.S. in Information Technology (Advanced Cybersecurity)** — University of Phoenix (2024)
-- **CISSP** (2025)
-- **CompTIA Security+** (2010)
-- **CompTIA A+** (2009)
-- **JAMF 100/200** (2024)
-
 ## 🔒 Security Note
 
 These scripts are provided for **legitimate administrative purposes only**. Always:
