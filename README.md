@@ -1,27 +1,73 @@
-# PublicSharing - Security & Sysadmin Script Library
+# PublicSharing — Security-First Automation & Threat-Hunting Toolkit
 
-A comprehensive collection of **650+ professional scripts** for security engineers, system administrators, and IT professionals.
+A curated, security-first library of **650+ production-ready scripts** and playbooks for **sysadmins, security engineers, and incident responders**. This repo is built for **knowledge-sharing**: clear, auditable automation that helps peers **detect faster, respond smarter, and operate safer** across enterprise environments.
 
-## 📁 Repository Structure
+## 🧭 Mission
 
-| Folder | Description | Scripts |
-|--------|-------------|---------|
-| `/Microsoft-Exchange/` | Exchange Online & on-prem management | 50 |
-| `/Microsoft-Azure/` | Azure resource management & security | 50 |
-| `/Microsoft-Entra/` | Identity & access management (formerly Azure AD) | 50 |
-| `/Microsoft-Purview/` | Data governance, DLP & compliance | 50 |
-| `/Microsoft-Teams/` | Teams administration & auditing | 50 |
-| `/Microsoft-365/` | M365 tenant management & secure score | 50 |
-| `/CrowdStrike/` | EDR management & threat hunting | 50 |
-| `/AWS/` | Amazon Web Services security & management | 50 |
-| `/Linux/` | System administration & hardening | 50 |
-| `/ActiveDirectory/` | On-premises AD management | 50 |
-| `/Zscaler/` | Zero trust network security | 50 |
-| `/Jamf/` | Apple device management | 50 |
-| `/PowerShell-Bandaid/` | Module management & troubleshooting | 50 |
-| `/Custom-Scripts/` | Legacy & miscellaneous scripts | Varies |
+PublicSharing exists to **share battle-tested automation and threat-hunting building blocks** with the broader IT and security community. Every script is created with a **security-first mindset**, emphasizing least privilege, safe defaults, clear logging, and operational hygiene.
 
-## ✨ Script Features
+## 🧠 Professional Profile (Quick Highlights)
+
+- **AI Security Threat Hunter** with a strong focus on **telemetry-driven detection, triage efficiency, and operational resilience**.
+- **Multi-disciplinary engineer** spanning **security operations, identity, endpoint, cloud, M365, and infrastructure**.
+- **20+ years** of Windows Server & enterprise systems management.
+- **Automation-first mindset** with deep experience in **PowerShell, Bash, and scheduled task orchestration**.
+- Passionate about **LLMs and AI-assisted security workflows**, from **lightweight models on Raspberry Pi** to **frontier models like Opus 4.5**, plus **ClawDBot/MoltBot** and widely adopted open-weight and proprietary model stacks.
+
+## 🔐 Security-First Engineering Philosophy
+
+I build automation that **respects security boundaries and operational reality**:
+
+- **Safe-by-default** operations with confirmations before destructive actions
+- **Clean logging** for auditability and incident traceability
+- **Module dependency checks** to reduce runtime surprises
+- **Compatibility across hybrid environments** (on-prem + cloud)
+
+## 🤖 AI & LLM Passion
+
+I actively integrate **LLMs into security workflows**—from lightweight **local models** to enterprise-grade systems:
+
+- **Model range**: Raspberry Pi–scale local models → frontier-grade platforms (including **Opus 4.5**) 
+- **Agents & tooling**: **ClawDBot / MoltBot**, prompt-driven triage accelerators, and knowledge synthesis automation
+- **Focus**: **security-first AI**, minimizing hallucination risk through grounding, validation, and deterministic checks
+
+## ⚙️ Automation Before AI (Because Operations Matter)
+
+Long before AI, I built automation that **keeps environments stable and compliant**:
+
+- **PowerShell + Bash** for infra hygiene, fleet compliance, and audit readiness
+- **Windows scheduled tasks + Linux cron** for reliable, repeatable ops
+- **Environment-aware execution** (dev/test/prod parity, change control, staged rollouts)
+
+## 🧩 Repository Structure (Project Map)
+
+| Folder | Focus Area | Notable Themes |
+|--------|------------|----------------|
+| `/Microsoft-Exchange/` | Exchange Online & on-prem management | Exchange backend health, mailbox hygiene, transport rules |
+| `/Microsoft-Azure/` | Azure security & resource management | RBAC, subscriptions, compliance, cost-aware governance |
+| `/Microsoft-Entra/` | Identity & access (Azure AD) | Identity lifecycle, risk signals, conditional access |
+| `/Microsoft-Purview/` | Data governance & compliance | DLP, retention, audit, eDiscovery workflows |
+| `/Microsoft-Teams/` | Teams administration & auditing | Governance, audits, lifecycle management |
+| `/Microsoft-365/` | M365 tenant management | Secure Score, tenant posture, service hardening |
+| `/CrowdStrike/` | EDR management & threat hunting | Falcon ops, detection tuning, response ops |
+| `/AWS/` | AWS security & administration | IAM, security services, guardrails |
+| `/Linux/` | System administration & hardening | Baselines, patching, hardening checks |
+| `/ActiveDirectory/` | On-prem AD management | GPO hardening, identity cleanup, auditing |
+| `/Zscaler/` | Zero trust network security | Policy management, reporting, hygiene |
+| `/Jamf/` | Apple device management | Compliance, inventory, security posture |
+| `/PowerShell-Bandaid/` | Module mgmt & troubleshooting | Reliability tooling, diagnostic helpers |
+| `/Custom-Scripts/` | Legacy & miscellaneous | Specialized utilities and edge cases |
+
+## 🧪 Threat Hunting & Incident Response Focus
+
+This repo supports **real-world IR and SOC workflows**, including:
+
+- **Sentinel + CrowdStrike cohesion** for multi-source correlation and containment
+- **Incident response building blocks** (host triage, log capture, containment prep)
+- **Exchange & identity investigations** with fast scoping and audit-ready outputs
+- **Purview + compliance automation** for legal and data governance workflows
+
+## ✨ Script Quality Standards
 
 Every script in this library includes:
 
@@ -62,6 +108,37 @@ Every script in this library includes:
 - Appropriate admin/elevated permissions
 - Required modules (installed automatically or prompted)
 
+## 🧾 Experience Snapshot
+
+- **David Yurman Enterprises — Senior Cybersecurity Analyst (2022–Present)**
+  - Lead Sentinel triage on **15+ alerts/day** with **~15-minute MTTR**
+  - Managed **CrowdStrike Falcon** across **1,500+ endpoints** (on-prem & AWS)
+  - Automated **AD/Entra ID vendor cleanup** via PowerShell (30% cycle-time reduction)
+
+- **TKC Holdings — Tier 3 Systems Analyst (2018–2022)**
+  - Escalation lead for **200–300 ServiceNow tickets/month**, 100% resolution
+  - Built a **110+ page Confluence knowledge base** for durable operations
+  - Led **11,000-user M365 migration** with PowerShell automation
+
+- **Barnes-Jewish Hospital — Integrations Systems Analyst (2017–2018)**
+  - High-risk clinical upgrades across **550+ units** with zero disruption
+
+- **Capsugel (Pfizer) — Global IT Manager (2013–2014)**
+  - Global Exchange/AD design for **1,300 users / 18 countries**
+  - EU migration project across **1,900+ systems** with secure identity transition
+
+- **U.S. Air Force — Base Systems Administrator (2006–2011)**
+  - Administered mission-critical infrastructure for **900+ classified users**
+  - Led NOC operations and automated routing for **12,000+ users**
+
+## 🎓 Education & Certifications
+
+- **B.S. in Information Technology (Advanced Cybersecurity)** — University of Phoenix (2024)
+- **CISSP** (2025)
+- **CompTIA Security+** (2010)
+- **CompTIA A+** (2009)
+- **JAMF 100/200** (2024)
+
 ## 🔒 Security Note
 
 These scripts are provided for **legitimate administrative purposes only**. Always:
@@ -77,7 +154,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👤 Author
 
-**Anessen** - Security Engineer & Systems Administrator
+**Anessen** — Security Engineer, Threat Hunter, and Systems Automation Practitioner
 
 ## 🤝 Contributing
 
