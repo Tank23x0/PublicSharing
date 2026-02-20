@@ -6,7 +6,7 @@
     Reports on email authentication records (SPF, DMARC) for accepted domains.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

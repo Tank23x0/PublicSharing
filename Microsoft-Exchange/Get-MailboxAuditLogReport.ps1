@@ -7,7 +7,7 @@
     such as unauthorized access, delegate actions, and mailbox modifications.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

@@ -6,7 +6,7 @@
     Reports on email journaling configuration in Exchange Online for compliance.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

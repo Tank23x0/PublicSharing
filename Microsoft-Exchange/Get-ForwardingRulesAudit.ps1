@@ -8,7 +8,7 @@
     exfiltration and unauthorized forwarding to external addresses.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

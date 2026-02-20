@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %}Header Scanner{% endblock %}
+{% block content %}
+<div class="card">
+    <h2>HTTP Security Header Scanner</h2>
+    <form method="post">
+        <div class="form-group">
+            <label>Target URL</label>
+            <input type="text" name="url" placeholder="example.com" value="{{ request.form.get('url', '') }}">
+        </div>
+        <button type="submit" class="btn">Scan Headers</button>
+    </form>
+</div>
+
+{% if result %}
+{% if result.error %}
+<div class="card">
+    <div class="result">
+        <span class="result-value error">{{ result.error }}</span>
+    </div>
+</div>
+{% else %}
+<div class="card">
+    <h2>Scan Results — {{ result.url }}</h2>
+    <div class="grade grade-{{ result.grade }}">{{ result.grade }}</div>
+    <div style="text-align: center; color: var(--text-secondary); margin-bottom: 16px;">
+        Security Headers: {{ result.score }}
+    </div>
+    <div class="result">
+        <div class="result-row">
+            <span class="result-label">Status Code</span>
+            <span class="result-value">{{ result.status_code }}</span>
+        </div>
+        <div class="result-row">
+            <span class="result-label">Server</span>
+            <span class="result-value">{{ result.server }}</span>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <h2>Security Headers Analysis</h2>
+    <div class="result">
+        {% for name, info in result.security_headers.items() %}
+        <div class="result-row">
+            <span class="result-label">
+                {% if info.present %}
+                <span class="tag tag-present">PRESENT</span>
+                {% else %}
+                <span class="tag tag-missing">MISSING</span>
+                {% endif %}
+                {{ name }}
+            </span>
+            <span class="result-value" style="font-size: 11px;">
+                {{ info.value[:100] }}{% if info.value|length > 100 %}...{% endif %}
+                <br><span style="color: var(--text-secondary);">{{ info.description }}</span>
+            </span>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
+{% endif %}
+{% endblock %}

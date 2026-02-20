@@ -6,7 +6,7 @@
     Retrieves and analyzes Exchange admin audit logs for security review.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

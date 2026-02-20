@@ -7,7 +7,7 @@
     Identifies device types, OS versions, and potential security concerns.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

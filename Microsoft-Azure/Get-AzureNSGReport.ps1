@@ -7,7 +7,7 @@
     like open RDP/SSH or any-any rules.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

@@ -6,7 +6,7 @@
     Reports on all Microsoft 365 Groups (Unified Groups) in Exchange Online.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

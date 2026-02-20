@@ -6,7 +6,7 @@
     Enables or disables litigation hold on mailboxes individually or in bulk.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

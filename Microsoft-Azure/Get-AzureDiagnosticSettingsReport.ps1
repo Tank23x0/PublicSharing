@@ -6,7 +6,7 @@
     Audits diagnostic settings across resources to ensure logging is configured.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

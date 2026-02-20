@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}SecOps Toolkit{% endblock %} — Joe Romaine</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="top-bar">
+        <h1>[SecOps Toolkit]</h1>
+        <span class="author">Joe Romaine — <a href="https://JoeRomaine.com">JoeRomaine.com</a></span>
+    </div>
+    <nav>
+        <a href="/" {% if request.path == '/' %}class="active"{% endif %}>Dashboard</a>
+        <a href="/headers" {% if request.path == '/headers' %}class="active"{% endif %}>Header Scanner</a>
+        <a href="/hash" {% if request.path == '/hash' %}class="active"{% endif %}>Hash Toolkit</a>
+        <a href="/subnet" {% if request.path == '/subnet' %}class="active"{% endif %}>Subnet Calc</a>
+        <a href="/base64" {% if request.path == '/base64' %}class="active"{% endif %}>Base64</a>
+        <a href="/urldecode" {% if request.path == '/urldecode' %}class="active"{% endif %}>URL Decode</a>
+        <a href="/logs" {% if request.path == '/logs' %}class="active"{% endif %}>Log Analyzer</a>
+    </nav>
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+    <footer>
+        SecOps Toolkit v1.0.0 — Joe Romaine — <a href="https://JoeRomaine.com">JoeRomaine.com</a>
+        — UNCLASSIFIED // INTERNAL USE
+    </footer>
+</body>
+</html>

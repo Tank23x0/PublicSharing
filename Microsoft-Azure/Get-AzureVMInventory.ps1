@@ -6,7 +6,7 @@
     Comprehensive inventory of all Azure VMs including size, OS, disk, and network details.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

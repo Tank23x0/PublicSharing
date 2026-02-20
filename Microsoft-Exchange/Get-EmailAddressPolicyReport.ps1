@@ -6,7 +6,7 @@
     Reports on email address policies configured in Exchange Online.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

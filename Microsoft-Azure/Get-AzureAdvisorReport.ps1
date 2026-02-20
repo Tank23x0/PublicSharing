@@ -6,7 +6,7 @@
     Retrieves Azure Advisor recommendations for cost, security, reliability, and performance.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

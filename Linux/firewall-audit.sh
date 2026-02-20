@@ -3,7 +3,7 @@
 # firewall-audit.sh - Linux System Administration Tool
 #==============================================================================
 # Description: Professional Linux system administration and audit script
-# Author:      Anessen
+# Author:      Joe Romaine — https://JoeRomaine.com
 # Version:     1.0.0
 # Date:        2025-01-26
 #

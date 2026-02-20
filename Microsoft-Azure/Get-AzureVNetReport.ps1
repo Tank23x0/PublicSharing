@@ -6,7 +6,7 @@
     Inventories all VNets with subnets, peering, and service endpoint information.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

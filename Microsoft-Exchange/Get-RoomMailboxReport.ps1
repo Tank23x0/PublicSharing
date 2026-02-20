@@ -6,7 +6,7 @@
     Reports on all room and equipment mailboxes in Exchange Online.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

@@ -7,7 +7,7 @@
     in blocked emails for security review and policy tuning.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

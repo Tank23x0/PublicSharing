@@ -1,3 +1,23 @@
+#!/usr/bin/env python3
+"""
+CSV_removeEmptyColumns.py — CSV Column Cleaner
+
+Description:
+    Removes columns from a CSV file that have only one unique value in the
+    data rows. Useful for cleaning up large exports with redundant columns.
+
+Author:     Joe Romaine — https://JoeRomaine.com
+Version:    1.0.0
+Date:       2025-01-26
+
+Requirements:
+    - Python 3.9+
+    - pandas
+
+Usage:
+    python CSV_removeEmptyColumns.py
+"""
+
 import pandas as pd
 import os
 from pathlib import Path

@@ -6,7 +6,7 @@
     Identifies and removes mailbox permissions for deleted or disabled users.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

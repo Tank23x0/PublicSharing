@@ -6,7 +6,7 @@
     Audits all Key Vaults including access policies, network rules, and secret expiration.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

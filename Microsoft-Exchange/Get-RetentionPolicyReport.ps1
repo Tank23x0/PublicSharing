@@ -6,7 +6,7 @@
     Reports on MRM retention policies and tags configured in Exchange Online.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

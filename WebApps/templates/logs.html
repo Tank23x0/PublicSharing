@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}Log Analyzer{% endblock %}
+{% block content %}
+<div class="card">
+    <h2>Log Analyzer — IOC Pattern Extraction</h2>
+    <form method="post">
+        <div class="form-group">
+            <label>Paste Log Entries</label>
+            <textarea name="text" rows="10" placeholder="Paste log lines here for analysis...&#10;&#10;Detects: IP addresses, email addresses, URLs, file paths, MAC addresses, hashes (MD5/SHA256), CVE references, error keywords, Base64 blobs">{{ request.form.get('text', '') }}</textarea>
+        </div>
+        <button type="submit" class="btn">Analyze Logs</button>
+    </form>
+</div>
+
+{% if result %}
+<div class="card">
+    <h2>Analysis Results</h2>
+    <div class="result">
+        <div class="result-row">
+            <span class="result-label">Lines Analyzed</span>
+            <span class="result-value">{{ result.total_lines }}</span>
+        </div>
+        <div class="result-row">
+            <span class="result-label">Patterns Found</span>
+            <span class="result-value {% if result.total_findings > 0 %}warning{% else %}success{% endif %}">
+                {{ result.total_findings }}
+            </span>
+        </div>
+    </div>
+</div>
+
+{% if result.findings %}
+<div class="card">
+    <h2>Extracted Indicators</h2>
+    {% for finding in result.findings %}
+    <div class="finding-block">
+        <h4>{{ finding.pattern }} ({{ finding.count }} found)</h4>
+        <div class="samples">
+            {% for sample in finding.samples %}
+            <code style="display: block; padding: 2px 0; color: var(--text-primary);">{{ sample }}</code>
+            {% endfor %}
+            {% if finding.count > 10 %}
+            <span style="color: var(--text-secondary);">... and {{ finding.count - 10 }} more</span>
+            {% endif %}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
+{% endif %}
+{% endblock %}

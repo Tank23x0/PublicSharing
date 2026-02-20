@@ -6,7 +6,7 @@
     Sets calendar sharing permissions for a mailbox.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

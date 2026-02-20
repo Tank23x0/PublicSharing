@@ -6,7 +6,7 @@
     Reports on all mail contacts in Exchange Online.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

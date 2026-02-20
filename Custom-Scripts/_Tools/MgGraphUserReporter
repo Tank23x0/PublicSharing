@@ -1,6 +1,6 @@
 # Script: Interactive Entra ID User Search to Excel (Paste & Run with Restart/Append)
 # Version: 2.3 (Microsoft Graph + ImportExcel Module)
-# Creator: Joey Romaine
+# Creator: Joe Romaine
 # This script interactively searches Microsoft Entra ID (Azure AD) users and exports results to an Excel (.xlsx) file.
 # It clears the screen, prompts for a field to search (Title, Department, etc.), prompts for keywords,
 # performs a case-insensitive 'contains' search, prompts for an output filename, and allows appending

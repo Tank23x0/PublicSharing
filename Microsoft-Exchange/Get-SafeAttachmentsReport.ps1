@@ -7,7 +7,7 @@
     Identifies gaps in attachment protection coverage.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

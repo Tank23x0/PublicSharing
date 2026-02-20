@@ -7,7 +7,7 @@
     status, identifies failed deliveries, and exports comprehensive reports.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

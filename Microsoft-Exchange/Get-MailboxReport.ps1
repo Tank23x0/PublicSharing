@@ -8,7 +8,7 @@
     Exports results to CSV with progress tracking and logging.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

@@ -7,7 +7,7 @@
     Supports scheduling, internal/external messages, and bulk operations via CSV.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

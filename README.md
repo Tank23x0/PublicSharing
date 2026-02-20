@@ -1,139 +1,188 @@
-# PublicSharing — Security-First Automation & Threat-Hunting Toolkit
+# PublicSharing — Cyber Operations Arsenal
 
-A curated, security-first library of **650+ production-ready scripts** and playbooks for **sysadmins, security engineers, and incident responders**. This repo is built for **knowledge-sharing**: clear, auditable automation that helps peers **detect faster, respond smarter, and operate safer** across enterprise environments.
+**Author:** Joe Romaine | [JoeRomaine.com](https://JoeRomaine.com)
+**Classification:** UNCLASSIFIED // PUBLIC RELEASE
+**Mission Type:** Blue Team Defense, Offensive Security Research, Enterprise Hardening
 
-## 🧭 Mission
-
-PublicSharing exists to **share battle-tested automation and threat-hunting building blocks** with the broader IT and security community. Every script is created with a **security-first mindset**, emphasizing least privilege, safe defaults, clear logging, and operational hygiene.
-
-## 🧠 Professional Profile (Quick Highlights)
-
-- **AI Security Threat Hunter** with a strong focus on **telemetry-driven detection, triage efficiency, and operational resilience**.
-- **Multi-disciplinary engineer** spanning **security operations, identity, endpoint, cloud, M365, and infrastructure**.
-- **20+ years** of Windows Server & enterprise systems management.
-- **Automation-first mindset** with deep experience in **PowerShell, Bash, and scheduled task orchestration**.
-- Passionate about **LLMs and AI-assisted security workflows**, from **lightweight models on Raspberry Pi** to **frontier models like Opus 4.5**, plus **ClawDBot/MoltBot** and widely adopted open-weight and proprietary model stacks.
-
-## 🔐 Security-First Engineering Philosophy
-
-I build automation that **respects security boundaries and operational reality**:
-
-- **Safe-by-default** operations with confirmations before destructive actions
-- **Clean logging** for auditability and incident traceability
-- **Module dependency checks** to reduce runtime surprises
-- **Compatibility across hybrid environments** (on-prem + cloud)
-
-## 🤖 AI & LLM Passion
-
-I actively integrate **LLMs into security workflows**—from lightweight **local models** to enterprise-grade systems:
-
-- **Model range**: Raspberry Pi–scale local models → frontier-grade platforms (including **Opus 4.5**) 
-- **Agents & tooling**: **ClawDBot / MoltBot**, prompt-driven triage accelerators, and knowledge synthesis automation
-- **Focus**: **security-first AI**, minimizing hallucination risk through grounding, validation, and deterministic checks
-
-## ⚙️ Automation Before AI (Because Operations Matter)
-
-Long before AI, I built automation that **keeps environments stable and compliant**:
-
-- **PowerShell + Bash** for infra hygiene, fleet compliance, and audit readiness
-- **Windows scheduled tasks + Linux cron** for reliable, repeatable ops
-- **Environment-aware execution** (dev/test/prod parity, change control, staged rollouts)
-
-## 🧩 Repository Structure (Project Map)
-
-| Folder | Focus Area | Notable Themes |
-|--------|------------|----------------|
-| `/Microsoft-Exchange/` | Exchange Online & on-prem management | Exchange backend health, mailbox hygiene, transport rules |
-| `/Microsoft-Azure/` | Azure security & resource management | RBAC, subscriptions, compliance, cost-aware governance |
-| `/Microsoft-Entra/` | Identity & access (Azure AD) | Identity lifecycle, risk signals, conditional access |
-| `/Microsoft-Purview/` | Data governance & compliance | DLP, retention, audit, eDiscovery workflows |
-| `/Microsoft-Teams/` | Teams administration & auditing | Governance, audits, lifecycle management |
-| `/Microsoft-365/` | M365 tenant management | Secure Score, tenant posture, service hardening |
-| `/CrowdStrike/` | EDR management & threat hunting | Falcon ops, detection tuning, response ops |
-| `/AWS/` | AWS security & administration | IAM, security services, guardrails |
-| `/Linux/` | System administration & hardening | Baselines, patching, hardening checks |
-| `/ActiveDirectory/` | On-prem AD management | GPO hardening, identity cleanup, auditing |
-| `/Zscaler/` | Zero trust network security | Policy management, reporting, hygiene |
-| `/Jamf/` | Apple device management | Compliance, inventory, security posture |
-| `/PowerShell-Bandaid/` | Module mgmt & troubleshooting | Reliability tooling, diagnostic helpers |
-| `/Custom-Scripts/` | Legacy & miscellaneous | Specialized utilities and edge cases |
-
-## 🧪 Threat Hunting & Incident Response Focus
-
-This repo supports **real-world IR and SOC workflows**, including:
-
-- **Sentinel + CrowdStrike cohesion** for multi-source correlation and containment
-- **Incident response building blocks** (host triage, log capture, containment prep)
-- **Exchange & identity investigations** with fast scoping and audit-ready outputs
-- **Purview + compliance automation** for legal and data governance workflows
-
-## ✨ Script Quality Standards
-
-Every script in this library includes:
-
-- **Professional headers** with name, description, author, version, and date
-- **Detailed comments** explaining each section
-- **User confirmation prompts** before destructive operations
-- **Progress indicators** for long-running tasks
-- **Comprehensive logging** (Windows: `C:\Scripts\`, Mac/Linux: `~/Documents/Scripts/`)
-- **Module dependency checks** with automatic installation
-- **Clean, professional output** formatting
-
-## 🚀 Getting Started
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Anessen/PublicSharing.git
-   ```
-
-2. Navigate to the desired category folder
-
-3. Review the script header and requirements
-
-4. Run with appropriate permissions:
-   ```powershell
-   # PowerShell (Windows)
-   .\ScriptName.ps1
-   
-   # Bash (Linux/Mac)
-   chmod +x script-name.sh
-   ./script-name.sh
-   ```
-
-## 📋 Requirements
-
-- **PowerShell 5.1+** or **PowerShell 7+** for Windows scripts
-- **Bash 4.0+** for Linux/Mac scripts
-- **Python 3.8+** for Python scripts
-- Appropriate admin/elevated permissions
-- Required modules (installed automatically or prompted)
-
-## 🔒 Security Note
-
-These scripts are provided for **legitimate administrative purposes only**. Always:
-
-- Review scripts before running in production
-- Test in a non-production environment first
-- Ensure you have proper authorization
-- Follow your organization's change management process
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👤 Author
-
-**Anessen** — Security Engineer, Threat Hunter, and Systems Automation Practitioner
-
-## 🤝 Contributing
-
-Contributions are welcome! Please:
-
-1. Fork the repository
-2. Create a feature branch
-3. Follow the existing script format
-4. Submit a pull request
+A curated arsenal of **700+ production-grade scripts, audit frameworks, and security tooling** built for **SOC analysts, threat hunters, incident responders, and penetration testers**. Every tool follows a standardized methodology -- clear headers, structured logging, safe defaults, and operational discipline.
 
 ---
 
-*Built with ❤️ for the IT community*
+## OPORD: Mission Statement
+
+This repository is a **Cyber Operations Toolkit** -- a living armory of automation, detection, and response capabilities organized by operational domain. Built from years of real-world enterprise security operations, every script is designed for **immediate deployment** in defended environments.
+
+**Core Tenets:**
+- **Standardized methodology** across all languages (PowerShell, Bash, Python)
+- **Defensive-first design** -- safe defaults, confirmation gates, clean audit trails
+- **Operational readiness** -- every tool tested against production-class environments
+- **Knowledge sharing** -- open-source to elevate the community's defensive posture
+
+---
+
+## ORBAT: Order of Battle (Repository Structure)
+
+### SECTOR 1: Cloud Theater Operations
+
+| Unit | AOR (Area of Responsibility) | Strength |
+|------|------------------------------|----------|
+| [`/AWS/`](AWS/) | Amazon Web Services -- IAM, GuardDuty, CloudTrail, S3, EC2, KMS, VPC security | 50+ scripts |
+| [`/Microsoft-Azure/`](Microsoft-Azure/) | Azure -- RBAC, Security Center, Key Vault, NSGs, resource governance | 50+ scripts |
+| [`/Microsoft-365/`](Microsoft-365/) | M365 tenant -- Secure Score, compliance, service health, DLP | 50+ scripts |
+
+### SECTOR 2: Identity & Access Operations
+
+| Unit | AOR | Strength |
+|------|-----|----------|
+| [`/ActiveDirectory/`](ActiveDirectory/) | On-prem AD -- GPO, Kerberos, replication, privileged groups, stale accounts | 50+ scripts |
+| [`/Microsoft-Entra/`](Microsoft-Entra/) | Entra ID (Azure AD) -- conditional access, risk signals, identity protection | 50+ scripts |
+| [`/Microsoft-Exchange/`](Microsoft-Exchange/) | Exchange Online & on-prem -- mail flow, permissions, DLP, forensic traces | 50+ scripts |
+
+### SECTOR 3: Endpoint Defense & Fleet Operations
+
+| Unit | AOR | Strength |
+|------|-----|----------|
+| [`/CrowdStrike/`](CrowdStrike/) | Falcon EDR -- detections, containment, IOCs, RTR, sensor health, ZTA | 50+ scripts |
+| [`/Jamf/`](Jamf/) | Apple fleet -- compliance, inventory, profiles, MDM, security posture | 50+ scripts |
+| [`/Linux/`](Linux/) | Linux hardening -- security audit, firewall, rootkit, SUID, SSH, kernel | 50+ scripts |
+| [`/Zscaler/`](Zscaler/) | Zero Trust network -- DLP, policies, traffic, threat analytics, ZPA | 50+ scripts |
+
+### SECTOR 4: Governance, Risk & Compliance (GRC)
+
+| Unit | AOR | Strength |
+|------|-----|----------|
+| [`/Microsoft-Purview/`](Microsoft-Purview/) | Data governance -- DLP, retention, eDiscovery, sensitivity labels, compliance | 50+ scripts |
+| [`/Microsoft-Teams/`](Microsoft-Teams/) | Teams governance -- policies, guest access, channel audit, lifecycle | 50+ scripts |
+| [`/Auditing/`](Auditing/) | Cross-platform audit frameworks -- 18 platform full-audit suites | 36+ files |
+
+### SECTOR 5: Support Operations & Sustainment
+
+| Unit | AOR | Strength |
+|------|-----|----------|
+| [`/PowerShell-Bandaid/`](PowerShell-Bandaid/) | PS environment repair -- module conflicts, gallery fixes, WinRM, profiles | 48+ scripts |
+| [`/Custom-Scripts/`](Custom-Scripts/) | Specialized tooling -- M365 deep-dive scripts, XDR monitor, utilities | 300+ scripts |
+| [`/Training-Awareness/`](Training-Awareness/) | Security awareness -- phishing, ransomware, social engineering, IR training | 40+ files |
+
+### SECTOR 6: Cyber Weapons Development (Web Applications)
+
+| Unit | AOR | Strength |
+|------|-----|----------|
+| [`/WebApps/`](WebApps/) | Security web tools -- log analyzer, header scanner, hash lookup, subnet calculator | Active development |
+
+### COMMAND: Planning & Operations
+
+| Unit | Purpose |
+|------|---------|
+| [`/_NextSteps/`](_NextSteps/) | Future capability roadmap -- planned tools, research areas, expansion targets |
+| [`/CONVENTIONS.md`](CONVENTIONS.md) | Coding standards -- standardized headers and patterns for all languages |
+
+---
+
+## TTPs: Technical Standards
+
+### Script Quality Doctrine
+
+Every script in this arsenal follows **standardized conventions** (see [`CONVENTIONS.md`](CONVENTIONS.md)):
+
+- **Standardized header block** -- name, synopsis, description, author, version, date, requirements
+- **Structured logging** -- timestamped, leveled (INFO/WARNING/ERROR/SUCCESS), persistent to disk
+- **Module dependency management** -- auto-check, auto-install where safe
+- **Safe execution** -- confirmation prompts before destructive operations
+- **Professional output** -- banner display, progress indicators, summary reports
+- **Cross-platform paths** -- Windows (`C:\Scripts\`) and Linux/Mac (`~/Documents/Scripts/`)
+
+### Supported Languages
+
+| Language | Domain | Convention |
+|----------|--------|------------|
+| **PowerShell** | Windows/M365/Azure/AD administration | `Verb-Noun.ps1` with `CmdletBinding`, comment-based help |
+| **Bash** | Linux systems, hardening, network ops | `kebab-case.sh` with `set -euo pipefail`, function-based |
+| **Python** | Web apps, API integrations, data tools | `snake_case.py` with docstrings, type hints, `argparse` |
+
+---
+
+## SIGINT: Threat Hunting & IR Capabilities
+
+This arsenal supports **real-world SOC and IR workflows**:
+
+- **Multi-source correlation** -- Sentinel + CrowdStrike + Purview telemetry fusion
+- **Identity attack investigation** -- Kerberoasting, password spray, MFA bypass detection
+- **Email forensics** -- message trace, forwarding rules, delegate audit, mail flow analysis
+- **Endpoint containment** -- CrowdStrike RTR, host isolation, IOC deployment
+- **Data exfiltration detection** -- DLP alerts, sharing audit, sensitivity label tracking
+- **Compliance response** -- eDiscovery, legal hold, retention, subject rights requests
+
+---
+
+## COMMS: Getting Started
+
+```bash
+# Clone the operations repository
+git clone https://github.com/Tank23x0/PublicSharing.git
+cd PublicSharing
+
+# PowerShell operations (Windows)
+.\AWS\Get-AWSCredentialReport.ps1
+
+# Bash operations (Linux/Mac)
+chmod +x Linux/security-audit.sh
+./Linux/security-audit.sh
+
+# Python web applications
+cd WebApps
+pip install -r requirements.txt
+python app.py
+```
+
+### Requirements
+
+- **PowerShell 5.1+** or **PowerShell 7+** (cross-platform)
+- **Bash 4.0+** (Linux/macOS)
+- **Python 3.9+** with pip (web applications)
+- Appropriate administrative/elevated permissions
+- Required modules auto-install or prompt on first run
+
+---
+
+## OPSEC: Security Notice
+
+These tools are provided for **authorized security operations only**. Always:
+
+- Review scripts before deploying to production environments
+- Test in isolated/non-production environments first
+- Ensure proper authorization and change control approval
+- Follow your organization's ROE (Rules of Engagement)
+- Maintain chain of custody for forensic outputs
+
+---
+
+## PERSEC: Author
+
+**Joe Romaine** -- [JoeRomaine.com](https://JoeRomaine.com)
+Security Engineer | Threat Hunter | Blue Team Operator | Pentester
+
+- **20+ years** enterprise systems and security operations
+- **Multi-domain expertise** -- SOC, identity, endpoint, cloud, M365, infrastructure
+- **AI-augmented security** -- LLM-driven detection, triage acceleration, knowledge synthesis
+- **Automation-first** -- PowerShell, Bash, Python across hybrid environments
+
+---
+
+## Contributing
+
+Contributions welcome. Follow the conventions in [`CONVENTIONS.md`](CONVENTIONS.md):
+
+1. Fork the repository
+2. Create a feature branch
+3. Follow the standardized script format for the target language
+4. Submit a pull request with clear description of the capability added
+
+---
+
+## LICENSE
+
+MIT License -- see [LICENSE](LICENSE) for details.
+
+---
+
+*Built for defenders. Shared with the community. Operational at all times.*

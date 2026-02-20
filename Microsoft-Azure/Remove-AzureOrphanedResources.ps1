@@ -6,7 +6,7 @@
     Identifies and optionally removes orphaned resources (disks, NICs, public IPs, NSGs).
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

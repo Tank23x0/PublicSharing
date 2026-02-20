@@ -7,7 +7,7 @@
     for multiple users via CSV import.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

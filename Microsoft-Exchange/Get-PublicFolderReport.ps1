@@ -7,7 +7,7 @@
     item count, permissions, and mail-enabled status.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

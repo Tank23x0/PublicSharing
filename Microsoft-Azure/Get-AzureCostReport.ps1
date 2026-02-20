@@ -7,7 +7,7 @@
     Identifies cost trends and expensive resources.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

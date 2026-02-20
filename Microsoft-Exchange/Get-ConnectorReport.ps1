@@ -7,7 +7,7 @@
     Identifies security configuration of partner and on-premises connectors.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

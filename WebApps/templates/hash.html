@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block title %}Hash Toolkit{% endblock %}
+{% block content %}
+<div class="card">
+    <h2>Hash Generator / Verifier</h2>
+    <form method="post">
+        <div class="form-group">
+            <label>Input Text</label>
+            <textarea name="text" rows="3" placeholder="Enter text to hash or verify...">{{ request.form.get('text', '') }}</textarea>
+        </div>
+        <div class="form-group">
+            <label>Known Hash (for verification only)</label>
+            <input type="text" name="known_hash" placeholder="Paste hash to verify against..." value="{{ request.form.get('known_hash', '') }}">
+        </div>
+        <div class="btn-group">
+            <button type="submit" name="action" value="generate" class="btn">Generate Hashes</button>
+            <button type="submit" name="action" value="verify" class="btn">Verify Hash</button>
+        </div>
+    </form>
+</div>
+
+{% if result %}
+<div class="card">
+    {% if result.error %}
+    <div class="result">
+        <span class="result-value error">{{ result.error }}</span>
+    </div>
+    {% elif result.md5 %}
+    <h2>Generated Hashes</h2>
+    <div class="result">
+        <div class="result-row">
+            <span class="result-label">MD5</span>
+            <span class="result-value">{{ result.md5 }}</span>
+        </div>
+        <div class="result-row">
+            <span class="result-label">SHA-1</span>
+            <span class="result-value">{{ result.sha1 }}</span>
+        </div>
+        <div class="result-row">
+            <span class="result-label">SHA-256</span>
+            <span class="result-value">{{ result.sha256 }}</span>
+        </div>
+        <div class="result-row">
+            <span class="result-label">SHA-512</span>
+            <span class="result-value">{{ result.sha512 }}</span>
+        </div>
+    </div>
+    {% elif result.match is defined %}
+    <h2>Verification Result</h2>
+    <div class="result">
+        <div class="result-row">
+            <span class="result-label">Algorithm Detected</span>
+            <span class="result-value">{{ result.algorithm|upper }}</span>
+        </div>
+        <div class="result-row">
+            <span class="result-label">Match</span>
+            <span class="result-value {% if result.match %}success{% else %}error{% endif %}">
+                {% if result.match %}MATCH CONFIRMED{% else %}NO MATCH{% endif %}
+            </span>
+        </div>
+        <div class="result-row">
+            <span class="result-label">Computed Hash</span>
+            <span class="result-value">{{ result.computed }}</span>
+        </div>
+        <div class="result-row">
+            <span class="result-label">Provided Hash</span>
+            <span class="result-value">{{ result.provided }}</span>
+        </div>
+    </div>
+    {% endif %}
+</div>
+{% endif %}
+{% endblock %}

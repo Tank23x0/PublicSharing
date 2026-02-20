@@ -6,7 +6,7 @@
     Reports on mailboxes with eDiscovery holds applied.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

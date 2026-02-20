@@ -8,7 +8,7 @@
     that may pose privacy or security risks.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

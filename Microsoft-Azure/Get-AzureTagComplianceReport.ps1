@@ -6,7 +6,7 @@
     Audits resources for tag compliance against required tags.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

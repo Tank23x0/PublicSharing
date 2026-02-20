@@ -6,7 +6,7 @@
     Exports comprehensive mailbox information for selected or all mailboxes.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

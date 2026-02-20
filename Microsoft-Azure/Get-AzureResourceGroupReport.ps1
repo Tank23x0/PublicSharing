@@ -6,7 +6,7 @@
     Inventories all resource groups with resource counts and tags.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

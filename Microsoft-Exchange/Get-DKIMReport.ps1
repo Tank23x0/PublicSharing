@@ -7,7 +7,7 @@
     Identifies domains without DKIM configured.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

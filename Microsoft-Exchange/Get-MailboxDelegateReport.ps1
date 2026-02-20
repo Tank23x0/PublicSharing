@@ -6,7 +6,7 @@
     Reports on all delegate permissions including calendar and inbox delegates.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

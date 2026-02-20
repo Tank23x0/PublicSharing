@@ -6,7 +6,7 @@
     Creates a new distribution list with specified members and settings.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

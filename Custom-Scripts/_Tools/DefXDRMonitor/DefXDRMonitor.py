@@ -1,3 +1,25 @@
+#!/usr/bin/env python3
+"""
+DefXDRMonitor.py — Microsoft Defender XDR Incident Viewer
+
+Description:
+    GUI application for monitoring Microsoft Defender XDR incidents in real-time.
+    Authenticates via MSAL device code flow and displays incidents sorted by
+    severity with configurable auto-refresh.
+
+Author:     Joe Romaine — https://JoeRomaine.com
+Version:    1.0.0
+Date:       2025-01-26
+
+Requirements:
+    - Python 3.9+
+    - msal, requests, tkinter
+    - Microsoft Entra ID app registration with Incident.Read.All permissions
+
+Usage:
+    python DefXDRMonitor.py
+"""
+
 import tkinter as tk
 from tkinter import ttk, messagebox
 import requests

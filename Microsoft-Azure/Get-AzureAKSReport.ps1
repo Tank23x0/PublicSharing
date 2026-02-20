@@ -6,7 +6,7 @@
     Inventories all AKS clusters with node pools and configurations.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

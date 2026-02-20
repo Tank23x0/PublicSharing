@@ -8,7 +8,7 @@
     Exports detailed report with recommendations.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

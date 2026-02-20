@@ -1,5 +1,5 @@
 # TABL.ps1
-# Creator: Joey Romaine
+# Creator: Joe Romaine
 # Tenant Allow/Block List Management Script
 
 # ASCII Header

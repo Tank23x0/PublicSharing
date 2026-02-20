@@ -6,7 +6,7 @@
     Identifies all mailboxes forwarding to external addresses. Critical security audit.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

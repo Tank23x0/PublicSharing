@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block title %}Subnet Calculator{% endblock %}
+{% block content %}
+<div class="card">
+    <h2>Subnet Calculator</h2>
+    <form method="post">
+        <div class="form-group">
+            <label>CIDR Notation</label>
+            <input type="text" name="cidr" placeholder="192.168.1.0/24 or 10.0.0.0/16" value="{{ request.form.get('cidr', '') }}">
+        </div>
+        <button type="submit" class="btn">Calculate</button>
+    </form>
+</div>
+
+{% if result %}
+<div class="card">
+    {% if result.error %}
+    <div class="result">
+        <span class="result-value error">{{ result.error }}</span>
+    </div>
+    {% else %}
+    <h2>Network Details — {{ result.cidr }}</h2>
+    <div class="result">
+        <div class="result-row">
+            <span class="result-label">CIDR</span>
+            <span class="result-value">{{ result.cidr }}</span>
+        </div>
+        <div class="result-row">
+            <span class="result-label">Network Address</span>
+            <span class="result-value">{{ result.network }}</span>
+        </div>
+        <div class="result-row">
+            <span class="result-label">Broadcast Address</span>
+            <span class="result-value">{{ result.broadcast }}</span>
+        </div>
+        <div class="result-row">
+            <span class="result-label">Subnet Mask</span>
+            <span class="result-value">{{ result.netmask }}</span>
+        </div>
+        <div class="result-row">
+            <span class="result-label">Prefix Length</span>
+            <span class="result-value">/{{ result.prefix_length }}</span>
+        </div>
+        <div class="result-row">
+            <span class="result-label">Total Addresses</span>
+            <span class="result-value">{{ result.total_hosts }}</span>
+        </div>
+        <div class="result-row">
+            <span class="result-label">Usable Hosts</span>
+            <span class="result-value success">{{ result.usable_hosts }}</span>
+        </div>
+        <div class="result-row">
+            <span class="result-label">First Usable Host</span>
+            <span class="result-value">{{ result.first_host }}</span>
+        </div>
+        <div class="result-row">
+            <span class="result-label">Last Usable Host</span>
+            <span class="result-value">{{ result.last_host }}</span>
+        </div>
+        <div class="result-row">
+            <span class="result-label">IP Version</span>
+            <span class="result-value">IPv{{ result.version }}</span>
+        </div>
+        <div class="result-row">
+            <span class="result-label">Private Network</span>
+            <span class="result-value {% if result.is_private %}success{% else %}warning{% endif %}">
+                {{ result.is_private }}
+            </span>
+        </div>
+    </div>
+    {% endif %}
+</div>
+{% endif %}
+{% endblock %}

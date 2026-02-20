@@ -6,7 +6,7 @@
     Reports on all archive-enabled mailboxes with size and status information.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

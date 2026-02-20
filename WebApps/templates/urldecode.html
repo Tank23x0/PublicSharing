@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}URL Decoder{% endblock %}
+{% block content %}
+<div class="card">
+    <h2>URL Decoder & Parser</h2>
+    <form method="post">
+        <div class="form-group">
+            <label>URL or Encoded String</label>
+            <textarea name="text" rows="3" placeholder="https://example.com/path?param1=value1&param2=value%202">{{ request.form.get('text', '') }}</textarea>
+        </div>
+        <button type="submit" class="btn">Decode & Parse</button>
+    </form>
+</div>
+
+{% if result %}
+<div class="card">
+    <h2>Decoded Result</h2>
+    <div class="result">
+        <div class="result-row">
+            <span class="result-label">Original</span>
+            <span class="result-value">{{ result.original }}</span>
+        </div>
+        <div class="result-row">
+            <span class="result-label">Decoded</span>
+            <span class="result-value success">{{ result.decoded }}</span>
+        </div>
+        <div class="result-row">
+            <span class="result-label">Scheme</span>
+            <span class="result-value">{{ result.scheme }}</span>
+        </div>
+        <div class="result-row">
+            <span class="result-label">Host</span>
+            <span class="result-value">{{ result.host }}</span>
+        </div>
+        <div class="result-row">
+            <span class="result-label">Path</span>
+            <span class="result-value">{{ result.path }}</span>
+        </div>
+    </div>
+
+    {% if result.params %}
+    <div class="result" style="margin-top: 12px;">
+        <div class="result-header">Query Parameters</div>
+        {% for key, values in result.params.items() %}
+        <div class="result-row">
+            <span class="result-label">{{ key }}</span>
+            <span class="result-value">{{ values | join(', ') }}</span>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+</div>
+{% endif %}
+{% endblock %}

@@ -6,7 +6,7 @@
     Retrieves Microsoft Defender for Cloud security assessments and recommendations.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

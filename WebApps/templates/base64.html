@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Base64 Codec{% endblock %}
+{% block content %}
+<div class="card">
+    <h2>Base64 Encode / Decode</h2>
+    <form method="post">
+        <div class="form-group">
+            <label>Input</label>
+            <textarea name="text" rows="4" placeholder="Enter text to encode or Base64 string to decode...">{{ request.form.get('text', '') }}</textarea>
+        </div>
+        <div class="btn-group">
+            <button type="submit" name="action" value="encode" class="btn">Encode</button>
+            <button type="submit" name="action" value="decode" class="btn">Decode</button>
+        </div>
+    </form>
+</div>
+
+{% if result %}
+<div class="card">
+    {% if result.error %}
+    <div class="result">
+        <span class="result-value error">{{ result.error }}</span>
+    </div>
+    {% else %}
+    <h2>{{ result.action }} Result</h2>
+    <div class="result">
+        <div class="result-row">
+            <span class="result-label">Input</span>
+            <span class="result-value">{{ result.input[:200] }}{% if result.input|length > 200 %}...{% endif %}</span>
+        </div>
+        <div class="result-row">
+            <span class="result-label">Output</span>
+            <span class="result-value success">{{ result.output }}</span>
+        </div>
+    </div>
+    {% endif %}
+</div>
+{% endif %}
+{% endblock %}

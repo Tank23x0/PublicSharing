@@ -6,7 +6,7 @@
     Reports on Microsoft Defender for Office 365 ATP policy configuration.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

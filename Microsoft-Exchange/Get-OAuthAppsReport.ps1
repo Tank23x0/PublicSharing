@@ -7,7 +7,7 @@
     Identifies high-risk app permissions and consent grants.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

@@ -6,7 +6,7 @@
     Reports on the 50 largest mailboxes by size.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

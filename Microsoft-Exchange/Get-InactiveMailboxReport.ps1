@@ -7,7 +7,7 @@
     Useful for license optimization and account cleanup.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

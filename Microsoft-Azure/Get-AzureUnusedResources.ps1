@@ -6,7 +6,7 @@
     Professional Azure management script for UnusedResources operations.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

@@ -8,7 +8,7 @@
     for quota adjustments or cleanup.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

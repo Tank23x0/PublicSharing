@@ -6,7 +6,7 @@
     Reports on all accepted domains in Exchange Online including type and default status.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

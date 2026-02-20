@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<div class="card">
+    <h2>Operations Center — Tool Selection</h2>
+    <p style="color: var(--text-secondary); margin-bottom: 20px; font-size: 13px;">
+        Select a tool below to begin. All operations run locally — no data leaves this machine.
+    </p>
+</div>
+
+<div class="tools-grid">
+    <a href="/headers" class="tool-card">
+        <h3>HTTP Header Scanner</h3>
+        <p>Analyze security headers on target URLs. Checks HSTS, CSP, X-Frame-Options, and more. Assigns a security grade.</p>
+    </a>
+
+    <a href="/hash" class="tool-card">
+        <h3>Hash Toolkit</h3>
+        <p>Generate MD5, SHA-1, SHA-256, SHA-512 hashes. Verify a hash against known input. Auto-detects algorithm by length.</p>
+    </a>
+
+    <a href="/subnet" class="tool-card">
+        <h3>Subnet Calculator</h3>
+        <p>Enter CIDR notation to calculate network address, broadcast, usable hosts, first/last host, and subnet mask.</p>
+    </a>
+
+    <a href="/base64" class="tool-card">
+        <h3>Base64 Codec</h3>
+        <p>Encode and decode Base64 strings. Useful for analyzing obfuscated payloads, encoded credentials, and data blobs.</p>
+    </a>
+
+    <a href="/urldecode" class="tool-card">
+        <h3>URL Decoder</h3>
+        <p>Decode URL-encoded strings. Parses and displays scheme, host, path, and query parameters separately.</p>
+    </a>
+
+    <a href="/logs" class="tool-card">
+        <h3>Log Analyzer</h3>
+        <p>Paste log entries to extract IPs, emails, URLs, hashes, CVEs, error keywords, and other IOC patterns.</p>
+    </a>
+</div>
+{% endblock %}

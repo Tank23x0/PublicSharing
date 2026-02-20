@@ -6,7 +6,7 @@
     Reports on current and historical migration batches in Exchange Online.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

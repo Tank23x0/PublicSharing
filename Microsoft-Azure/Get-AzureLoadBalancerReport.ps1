@@ -6,7 +6,7 @@
     Inventories all Azure Load Balancers with backend pools and health probes.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

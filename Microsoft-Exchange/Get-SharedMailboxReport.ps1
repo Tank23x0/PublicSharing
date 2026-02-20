@@ -7,7 +7,7 @@
     permissions, auto-mapping settings, and potential security issues.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

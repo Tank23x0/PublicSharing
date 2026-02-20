@@ -6,7 +6,7 @@
     Professional AWS administration and security audit script.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0
@@ -41,7 +41,7 @@ function Write-Log { param([string]$Message, [string]$Level = "INFO")
 Write-Host @"
 ╔══════════════════════════════════════════════════════════════════╗
 ║              AMAZON WEB SERVICES MANAGEMENT TOOL                 ║
-║                      Version 1.0.0                               ║
+║          Version 1.0.0 — Joe Romaine — JoeRomaine.com            ║
 ╚══════════════════════════════════════════════════════════════════╝
 "@ -ForegroundColor Cyan
 

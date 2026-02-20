@@ -6,7 +6,7 @@
     Analyzes Azure Activity Logs for security-relevant events and administrative actions.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

@@ -8,7 +8,7 @@
     auto-forwarding, bypassing spam filters, or modifying headers.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

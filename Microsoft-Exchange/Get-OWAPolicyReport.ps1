@@ -6,7 +6,7 @@
     Reports on OWA (Outlook on the web) mailbox policies and their settings.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

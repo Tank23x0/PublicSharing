@@ -6,7 +6,7 @@
     Comprehensive audit of all Send As permissions across mailboxes.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

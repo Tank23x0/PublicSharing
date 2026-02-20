@@ -6,7 +6,7 @@
     Reports on Exchange Online role groups and their members.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

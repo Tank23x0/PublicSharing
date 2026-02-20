@@ -6,7 +6,7 @@
     Audits Azure App Services for security configurations including HTTPS, TLS, and authentication.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

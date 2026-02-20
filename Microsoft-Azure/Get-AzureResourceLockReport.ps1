@@ -6,7 +6,7 @@
     Inventories all resource locks to ensure critical resources are protected.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0

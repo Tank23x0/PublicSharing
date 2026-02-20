@@ -6,7 +6,7 @@
     Inventories all managed disks including orphaned disks and encryption status.
 
 .AUTHOR
-    Anessen
+    Joe Romaine — https://JoeRomaine.com
 
 .VERSION
     1.0.0
